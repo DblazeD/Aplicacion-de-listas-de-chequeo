@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lista de chequeo UX Writing — Nequi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="w">
+
+<header>
+  <div class="brand"><span class="dot"></span>Lista de chequeo UX Writing</div>
+  <h1>¿Nequi escribe bien pensando en su usuario?</h1>
+  <p class="lead">Actividad 3 · Diseño de Interfaces de Usuario · Ing. Luis Eduardo Arango</p>
+  <p class="meta">Sitio evaluado: <strong>nequi.com.co</strong> · Estudiante: Deiby Jair Portillo Ordoñez <span class="fillin">-202360316</span></p>
+</header>
+
+<section class="method">
+  <h3>Cómo se hizo esta evaluación</h3>
+  <p>Cada ítem se revisó sobre el contenido público de nequi.com.co: su menú, su centro de ayuda, el flujo de apertura de cuenta y sus textos de marca. Los ítems ya vienen marcados según lo encontrado, con una nota corta que explica por qué. Puedes desmarcar o volver a marcar cualquier ítem: tu progreso se guarda solo en este navegador.</p>
+</section>
+
+<section class="results" id="results" aria-live="polite">
+  <div class="score-row">
+    <div class="score-block">
+      <div class="score-num"><span id="scoreVal">0</span><span class="score-max">/120</span></div>
+      <p class="score-tag" id="scoreTag">Calculando…</p>
+    </div>
+    <div class="save-block">
+      <button id="saveBtn" class="save-btn">💾 Guardar progreso</button>
+      <p class="save-status" id="saveStatus">Aún no has guardado en esta visita.</p>
+    </div>
+  </div>
+  <div class="score-bar-track"><div class="score-bar-fill" id="scoreFill"></div></div>
+  <p class="items-note"><span id="count">0</span> de <span id="total">0</span> ítems marcados como cumplidos</p>
+
+  <h3 class="breakdown-title">Resultados por categoría</h3>
+  <div id="catBars" class="cat-bars"></div>
+</section>
+
+<nav class="jump" aria-label="Ir a categoría">
+  <a href="#c1">Claridad</a><a href="#c2">Consistencia</a><a href="#c3">Jerarquía</a>
+  <a href="#c4">Orientación</a><a href="#c5">Accesibilidad</a><a href="#c6">Microcopy</a><a href="#leyes">Leyes</a>
+</nav>
+
+<main id="list"></main>
+
+<footer>
+  <button class="reset" id="reset">Reiniciar checklist</button>
+  <p id="lastSaved" class="last-saved"></p>
+  <p>Lista de chequeo UX Writing para página web · Actividad 3</p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
